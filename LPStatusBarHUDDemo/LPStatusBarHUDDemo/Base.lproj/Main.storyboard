@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTK-6k-tdt">
+                                <rect key="frame" x="255" y="101" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="091-qF-KjD"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ce9-O1-0Tk"/>
+                                </constraints>
+                                <state key="normal" title="显示成功信息">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSuccess:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rtq-yi-8hC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tn-zW-h5E">
+                                <rect key="frame" x="255" y="165" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DyK-RF-Zhb"/>
+                                    <constraint firstAttribute="width" constant="90" id="t2u-st-dYd"/>
+                                </constraints>
+                                <state key="normal" title="显示失败信息">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showError:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kqq-7d-Myw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdF-6Z-XDv">
+                                <rect key="frame" x="240" y="232" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="zJh-WJ-M47"/>
+                                    <constraint firstAttribute="height" constant="30" id="zd2-w6-2YX"/>
+                                </constraints>
+                                <state key="normal" title="显示正在加载信息">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLoading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7UM-8x-udj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fdF-6Z-XDv" secondAttribute="centerX" id="1Dp-dW-fee"/>
+                            <constraint firstItem="8tn-zW-h5E" firstAttribute="top" secondItem="GTK-6k-tdt" secondAttribute="bottom" constant="34" id="J2S-l8-gll"/>
+                            <constraint firstAttribute="centerX" secondItem="8tn-zW-h5E" secondAttribute="centerX" id="U0M-yC-dvC"/>
+                            <constraint firstItem="fdF-6Z-XDv" firstAttribute="top" secondItem="8tn-zW-h5E" secondAttribute="bottom" constant="37" id="eR7-hG-wVO"/>
+                            <constraint firstItem="GTK-6k-tdt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="81" id="nYw-7J-M1D"/>
+                            <constraint firstAttribute="centerX" secondItem="GTK-6k-tdt" secondAttribute="centerX" id="qF5-2E-bbD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
